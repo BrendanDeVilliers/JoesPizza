@@ -1,0 +1,54 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+<title>Joe's Pizza</title>
+	<link type="text/css" rel="stylesheet" href="../CSS/app.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../JS/menu.js"></script>
+	<script type="text/javascript" src="../JS/html-templates.js" ></script>
+	<script type="text/javascript" src="../JS/app.js" ></script>
+ </head>
+<body>
+	<!Top Banner>
+	<div class="page-top">
+		<img src="../imgs/pizza.png" title="Pizza Picture" alt="Picture of a pizza" />
+		<span>Joe's Pizza</span>
+		<a href="../index.html">
+			<img src="../imgs/home.png" alt="Picture for home"></a>
+	</div>
+	<!Page Body>
+	<div class="page-body">
+		<div class="side-left">
+			<div id="PizzaMenuHTML">
+				<fieldset id="PizzaMenu">
+					<legend>menu</legend>
+					<div id="MenuItemList">
+					</div>
+				</fieldset>
+			</div>
+		</div>
+		<div class="side-right">
+			<fieldset id="PizzaOrder">
+				<legend>your order</legend>
+				<div id="PizzaOrderItems">
+				</div>
+				<div id="PizzaOrderSummary">
+					<div>Order Total:</div>
+					<div></div>
+				</div>
+				<div id="PizzaOrderSubmit">Next---</div>
+			</fieldset>
+		</div>
+	</div>
+	
+	<div class="page-footer">
+	
+	</div>
+	
+	<script type="text/javascript">
+		App.Init();
+		App.LoadMenu();
+	</script>
+	
+</body>
+</html>
